@@ -1,0 +1,22 @@
+#!/bin/sh
+# Executed by startx (run your window manager from here)
+
+[[ -f $XDG_CONFIG_HOME/X11/Xresources ]] && xrdb -merge $XDG_CONFIG_HOME/X11/Xresources
+[[ -f $XDG_CONFIG_HOME/X11/Xmodmap ]] && xmodmap $XDG_CONFIG_HOME/X11/Xmodmap
+[[ -d $HOME/.fonts ]] && xset +fp $HOME/.fonts && xset fp rehash
+[[ -d /usr/share/fonts/local ]] && xset +fp /usr/share/fonts/local && xset fp rehash
+
+feh --bg-scale --no-fehbg ~/.wallpapers/Current
+xflux -z 60654
+
+if [[ -d $HOME/.local/environment/ ]]; then
+   for def in $HOME/.local/environment/*; do
+      source $def
+   done
+fi
+
+if [[ -n "$WINDOW_MANAGER" ]]; then
+   exec $WINDOW_MANAGER
+else
+   exec xmonad
+fi
