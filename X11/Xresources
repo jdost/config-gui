@@ -1,0 +1,64 @@
+#include "xcolors/Current"
+#include "xfonts"
+
+#define RFONT GOHU
+#define BFONT GOHU_B
+#define IFONT ANONPRO
+#define IBFONT ANONPRO_B
+
+Xcursor.theme: Neutral_Plus
+
+dzen2.font: UBUMONO
+
+! URxvt {{{
+URxvt.font: RFONT
+URxvt.boldFont: BFONT
+URxvt.italicFont: IFONT
+URxvt.boldItalicFont: IBFONT
+
+URxvt.scrollBar: False
+URxvt.scrollTtyOutput: False
+URxvt.scrollTtyKeypress: True
+URxvt.secondaryScroll: True
+URxvt.saveLines: 8000
+URxvt.internalBorder: 0
+URxvt.cutchars: "()*,<>[]{}|'\""
+
+URxvt.colorUL: #DDDDDD
+URxvt.perl-ext-common: default,matcher,clipboard,font-size
+! matcher
+URxvt.urlLauncher: chromium
+URxvt.matcher.button: 1
+URxvt.underlineURLs: true
+URxvt.urgentOnBell: true
+!URxvt*keysym.M-u: perl:url-select:select_next
+!
+!URxvt.keysym.C-Return: command:\033[?25t
+! clipboard
+URxvt.keysym.C-x: perl:clipboard:copy
+URxvt.keysym.C-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+! font-size
+URxvt.keysym.C-Up: perl:font-size:increase
+URxvt.keysym.C-Down: perl:font-size:decrease
+
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+
+URxvt.depth: 32
+URxvt.background: rgba:2222/2222/2222/dddd
+
+URxvt.inheritPixmap: true
+URxvt.tintColor: white
+URxvt.shading: 15
+! }}}
+
+! XTerm {{{
+XTerm*font: -*-montecarlo-medium-*-*-*-*-*-*-*-*-*-*-*-*
+XTerm*boldFont: -*-montecarlo-medium-*-*-*-*-*-*-*-*-*-*-*-*
+
+XTerm*scrollBar: False
+XTerm*saveLines: 8000
+! }}}

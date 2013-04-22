@@ -1,0 +1,5 @@
+google http://www.google.com/search?hl=en&output=search&sclient=psy-ab&q=_dwb_search_submit_&oq=&aq=&aqi=&aql=&gs_l=&pbx=1
+wunderground http://www.wunderground.com/cgi-bin/findweather/getForecast?query=_dwb_search_submit_
+archwiki https://wiki.archlinux.org/index.php?title=Special%3ASearch&search=_dwb_search_submit_
+aur http://aur.archlinux.org/packages.php?O=0&K=_dwb_search_submit_
+ddg http://duckduckgo.com/?q=_dwb_search_submit_

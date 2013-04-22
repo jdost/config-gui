@@ -1,0 +1,10 @@
+alias web='dwb'
+alias pdf='zathura' #llpp'
+
+alias gba="VisualBoyAdvance"
+alias snes="snes9x"
+
+export BROWSER="dwb"
+export WINEARCH="win32 winecfg"
+
+# vim: ft=zsh foldmethod=marker

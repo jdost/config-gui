@@ -1,0 +1,64 @@
+g:*default
+-24 http://www.google.com/search?hl=en&output=search&sclient=psy-ab&q=vim%20conditional&oq=&aq=&aqi=&aql=&gs_l=&pbx=1 vim
+-23 http://www.google.com/search?hl=en&output=search&sclient=psy-ab&q=vim%20conditional&oq=&aq=&aqi=&aql=&gs_l=&pbx=1#hl=en&tbo=d&sclient=psy-ab&q=vim+conditional+keybind&oq=vim+conditional+keybind&gs_l=serp.3...4236.6500.0.6931.8.8.0.0.0.1.1421.3820.4j1j5-1j0j2.8.0.les%3B..0.0...1c.1.4JeB9jS9e3Q&pbx=1&fp=1&biw=1440&bih=846&bav=on.2,or.r_gc.r_pw.r_qf.&cad=b&sei=LCYGUe_fA7Sk2gWJ_IGoAw vim
+-22 http://www.google.com/search?hl=en&output=search&sclient=psy-ab&q=vim%20conditional&oq=&aq=&aqi=&aql=&gs_l=&pbx=1#hl=en&tbo=d&sclient=psy-ab&q=vim+conditional+actions+for+key&oq=vim+conditional+actions+for+key&gs_l=serp.3...14797.20683.0.20962.28.22.3.1.1.0.160.2011.18j4.22.0.les%3B..0.0...1c.1.tDz__xGcAUc&pbx=1&bav=on.2,or.r_gc.r_pw.r_qf.&fp=9adb9986d41db8e2&biw=1440&bih=849 vim
+-21 http://vim.wikia.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_1) Mapping
+-20 http://vim.wikia.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_2) Mapping
+-19 http://vim.wikia.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_3) Mapping
+-18 http://vim.wikia.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_1) Mapping
+-17 http://vim.wikia.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_2) Mapping
+-16 http://www.google.com/search?hl=en&output=search&sclient=psy-ab&q=vim%20ctrl%20enter&oq=&aq=&aqi=&aql=&gs_l=&pbx=1 vim
+-15 http://stackoverflow.com/questions/598113/can-terminals-detect-shift-enter-or-control-enter vim
+-14 http://www.google.com/search?hl=en&output=search&sclient=psy-ab&q=urxvt%20ctrl%20enter&oq=&aq=&aqi=&aql=&gs_l=&pbx=1 urxvt
+-13 http://www.google.com/search?hl=en&output=search&sclient=psy-ab&q=urxvt%20ctrl%20enter&oq=&aq=&aqi=&aql=&gs_l=&pbx=1#hl=en&sugexp=les%3B&gs_rn=2&gs_ri=serp&gs_mss=urxvt%20perl&pq=urxvt%20ctrl%20enter&cp=14&gs_id=1q&xhr=t&q=urxvt+perl+extensions&es_nrs=true&pf=p&tbo=d&sclient=psy-ab&oq=urxvt+perl+ext&gs_l=&pbx=1&bav=on.2,or.r_gc.r_pw.r_qf.&bvm=bv.42080656,d.b2I&fp=dccb7e2ffd369026&biw=1432&bih=838 urxvt
+-12 http://www.google.com/search?hl=en&output=search&sclient=psy-ab&q=urxvt%20ctrl%20enter&oq=&aq=&aqi=&aql=&gs_l=&pbx=1#hl=en&tbo=d&sclient=psy-ab&q=urxvt+perl+extensions+font-size&oq=urxvt+perl+extensions+font-size&gs_l=serp.3..33i21.46873.48183.2.48204.10.10.0.0.0.1.272.977.6j2j1.9.0.les%3B..0.0...1c.1.2.serp.ew_I_Df9gk4&pbx=1&bav=on.2,or.r_gc.r_pw.r_qf.&bvm=bv.42080656,d.b2I&fp=dccb7e2ffd369026&biw=1432&bih=838 urxvt
+-11 https://github.com/majutsushi/urxvt-font-size majutsushi/urxvt-font-size
+-10 https://github.com/majutsushi majutsushi
+-9 https://github.com/majutsushi/etc 
+-8 https://github.com/majutsushi/etc/tree/master/.githooks etc/.githooks
+-7 https://github.com/majutsushi/etc/blob/master/.githooks/post-checkout etc/.githooks/post-checkout
+-6 https://github.com/majutsushi/etc majutsushi/etc
+-5 https://github.com/majutsushi/etc/tree/master/urxvt etc/urxvt
+-4 https://github.com/majutsushi/etc/tree/master/urxvt/ext etc/urxvt/ext
+-3 https://github.com/majutsushi/etc/tree/master/urxvt etc/urxvt
+-2 https://github.com/majutsushi/etc majutsushi/etc
+-1 https://github.com/majutsushi/etc/tree/master/vim etc/vim
+0|0 https://github.com/majutsushi/etc/blob/master/vim/vimrc etc/vim/vimrc at master · majutsushi/etc · GitHub
+-16 http://linux.die.net/man/1/urxvt urxvt(1)
+-15 http://www.google.com/search?hl=en&output=search&sclient=psy-ab&q=urxvt%20ctrl%20space&oq=&aq=&aqi=&aql=&gs_l=&pbx=1 urxvt
+-14 http://www.google.com/search?hl=en&output=search&sclient=psy-ab&q=urxvt%20ctrl%20space&oq=&aq=&aqi=&aql=&gs_l=&pbx=1#hl=en&tbo=d&sclient=psy-ab&q=urxvt+ctrl+return&oq=urxvt+ctrl+return&gs_l=serp.3...339808.342323.0.342570.11.11.0.0.0.2.142.1013.7j4.11.0.les%3Bernk_rqr..0.0...1.1.2.serp.oSvxgVt2xyM&pbx=1&bav=on.2,or.r_gc.r_pw.r_qf.&bvm=bv.42080656,d.b2I&fp=dccb7e2ffd369026&biw=1432&bih=838 urxvt
+-13 http://linux.die.net/man/7/urxvt urxvt(7)
+-12 http://www.google.com/search?hl=en&output=search&sclient=psy-ab&q=escape%20sequence%20ctrl%20enter&oq=&aq=&aqi=&aql=&gs_l=&pbx=1 urxvt
+-11 http://www.google.com/search?hl=en&output=search&sclient=psy-ab&q=escape%20sequence%20ctrl%20enter&oq=&aq=&aqi=&aql=&gs_l=&pbx=1#hl=en&tbo=d&sclient=psy-ab&q=urxvt+ctrl+enter&oq=urxvt+ctrl+enter&gs_l=serp.3...20208.22255.0.22684.20.10.0.0.0.3.223.890.8j1j1.10.0.les%3Bernk_rqr..0.0...1.1.2.serp.7G8mcMFOmw8&pbx=1&bav=on.2,or.r_gc.r_pw.r_qf.&bvm=bv.42080656,d.b2I&fp=dccb7e2ffd369026&biw=1432&bih=838 urxvt
+-10 http://www.google.com/search?hl=en&output=search&sclient=psy-ab&q=escape%20sequence%20ctrl%20enter&oq=&aq=&aqi=&aql=&gs_l=&pbx=1#hl=en&tbo=d&sclient=psy-ab&q=urxvt+ctrl-enter&oq=urxvt+ctrl-enter&gs_l=serp.3...195238.195493.1.195845.2.2.0.0.0.0.0.0..0.0.les%3Bernk_rqr..0.0...1.1.2.serp.QdFild1YYa4&pbx=1&bav=on.2,or.r_gc.r_pw.r_qf.&bvm=bv.42080656,d.b2I&fp=dccb7e2ffd369026&biw=1432&bih=838 urxvt
+-9 http://www.google.com/search?hl=en&output=search&sclient=psy-ab&q=escape%20sequence%20ctrl%20enter&oq=&aq=&aqi=&aql=&gs_l=&pbx=1#hl=en&tbo=d&sclient=psy-ab&q=urxvt+ctrl-return&oq=urxvt+ctrl-return&gs_l=serp.3...3475.5384.2.5655.11.11.0.0.0.0.171.905.8j3.11.0.les%3Bernk_rqr..0.0...1.1.2.serp.DX5gTkRpXLM&pbx=1&bav=on.2,or.r_gc.r_pw.r_qf.&bvm=bv.42080656,d.b2I&fp=dccb7e2ffd369026&biw=1432&bih=838 urxvt
+-8 http://www.google.com/search?hl=en&output=search&sclient=psy-ab&q=escape%20sequence%20ctrl%20enter&oq=&aq=&aqi=&aql=&gs_l=&pbx=1#hl=en&tbo=d&sclient=psy-ab&q=urxvt+c-return&oq=urxvt+c-return&gs_l=serp.3...19331.19663.3.20079.3.3.0.0.0.0.78.189.3.3.0.les%3Bernk_rqr..0.0...1.1.2.serp.uuVsPue66iU&pbx=1&bav=on.2,or.r_gc.r_pw.r_qf.&bvm=bv.42080656,d.b2I&fp=dccb7e2ffd369026&biw=1432&bih=838 urxvt
+-7 https://github.com/ArchMage/configs/blob/master/Xdefaults configs/Xdefaults
+-6 https://github.com/ GitHub
+-5 https://github.com/search Code
+-4 https://github.com/search?q=xresources&type=Repositories&ref=simplesearch Search
+-3 https://github.com/netzverweigerer/config-xresources netzverweigerer/config-xresources
+-2 https://github.com/netzverweigerer/config-xresources/blob/master/Xresources config-xresources/Xresources at master · netzverweigerer/config-xresources · GitHub
+-1 http://ftl.wikia.com/wiki/Ships Ships - FTL: Faster Than Light Wiki
+0|0 http://ftl.wikia.com/wiki/Ship_Achievements/Ancestry Ship Achievements/Ancestry - FTL: Faster Than Light Wiki
+1 http://ftl.wikia.com/wiki/Sectors#Hidden_Crystal_Worlds Sectors - FTL: Faster Than Light Wiki
+2 http://ftl.wikia.com/wiki/Category:Hidden_Crystal_Worlds_Events Hidden Crystal Worlds Events - FTL: Faster Than Light Wiki
+-1 dwb:settings dwb
+0|0 http://dotshare.it/dots/510/ DotShare.it
+-2 http://www.google.com/search?hl=en&output=search&sclient=psy-ab&q=rubiks%20revenge%20solution&oq=&aq=&aqi=&aql=&gs_l=&pbx=1 rubiks
+-1 http://www.speedcubing.com/chris/4-solution.html Solving
+0|0 http://www.speedcubing.com/chris/4-step2.html Step 2
+0|0 http://dotshare.it/dots/17/ DotShare.it
+-12 http://sur.subforge.org/ SUR
+-11 http://subtle.subforge.org/ subtle
+-10 http://subtle.subforge.org/projects/subtle/wiki/Snippets subtle
+-9 http://subtle.subforge.org/projects/subtle/wiki/Writing_sublets subtle
+-8 http://subtle.subforge.org/projects/subtle/wiki/Install subtle
+-7 http://subtle.subforge.org/projects/subtle/wiki subtle
+-6 http://subtle.subforge.org/projects/subtle/wiki/Hacking subtle
+-5 http://subtle.subforge.org/projects/subtle/wiki subtle
+-4 http://subtle.subforge.org/tab/show/subtle?tabid=0 subtle
+-3 http://subforge.org/ Subforge
+-2 http://subforge.org/projects/subtle/wiki subtle
+-1 http://subforge.org/projects/subtle/wiki/Panel subtle
+0|0 http://subforge.org/projects/subtle/wiki/Panel#Icons subtle - Panel - Subforge

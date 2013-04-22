@@ -1,0 +1,33 @@
+! Xft settings {{{
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintslight
+! }}}
+
+! Proggy {{{
+#define PROGGY -*-proggytinyttsz-medium-*-*-*-*-*-*-*-*-*-iso8859-*
+#define PROGGY_B -*-proggytinyttsz-*-*-*-*-*-*-*-*-*-*-iso8859-*
+! }}}
+
+! Gohu {{{
+#define GOHU -*-gohufont-medium-*-*-*-11-*-*-*-*-*-*-*
+#define GOHU_B -*-gohufont-*-*-*-*-11-*-*-*-*-*-*-*
+! }}}
+
+! AnonPro {{{
+#define ANONPRO -*-anonymous pro-medium-r-*-*-11-*-*-*-*-*-iso8859-*
+#define ANONPRO_B -*-anonymous pro-*-r-*-*-11-*-*-*-*-*-iso8859-*
+! }}}
+
+! UbuntuMono {{{
+#define UBUMONO -*-ubuntu mono-medium-r-normal-*-11-*-*-*-*-*-*-*
+! }}}
+!
+! OhSnap {{{
+#define OHSNAP -*-ohsnapu-mediume-r-normal-*-11-*-*-*-*-*-*-*
+#define OHSNAPB -*-ohsnapu-bold-r-normal-*-11-*-*-*-*-*-*-*
+! }}}
+
+! vim: ft=xdefaults foldmethod=marker
