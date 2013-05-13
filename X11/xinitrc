@@ -1,13 +1,9 @@
 #!/bin/sh
 # Executed by startx (run your window manager from here)
 
-[[ -f $XDG_CONFIG_HOME/X11/Xresources ]] && xrdb -merge $XDG_CONFIG_HOME/X11/Xresources
-[[ -f $XDG_CONFIG_HOME/X11/Xmodmap ]] && xmodmap $XDG_CONFIG_HOME/X11/Xmodmap
-[[ -d $HOME/.fonts ]] && xset +fp $HOME/.fonts && xset fp rehash
-[[ -d /usr/share/fonts/local ]] && xset +fp /usr/share/fonts/local && xset fp rehash
-
-feh --bg-scale --no-fehbg ~/.wallpapers/Current
-xflux -z 60654
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+XINIT_LOAD=1
 
 if [[ -d $HOME/.local/environment/ ]]; then
    for def in $HOME/.local/environment/*; do
@@ -15,8 +11,23 @@ if [[ -d $HOME/.local/environment/ ]]; then
    done
 fi
 
-if [[ -n "$WINDOW_MANAGER" ]]; then
-   exec $WINDOW_MANAGER
-else
-   exec xmonad
-fi
+[[ -f $XDG_CONFIG_HOME/X11/Xresources ]] && xrdb -merge $XDG_CONFIG_HOME/X11/Xresources
+[[ -f $XDG_CONFIG_HOME/X11/Xmodmap ]] && xmodmap $XDG_CONFIG_HOME/X11/Xmodmap
+[[ -d $HOME/.fonts ]] && xset +fp $HOME/.fonts && xset fp rehash
+[[ -d /usr/share/fonts/local ]] && xset +fp /usr/share/fonts/local && xset fp rehash
+
+feh --bg-scale --no-fehbg $WALLPAPER_FOLDER/Current
+xflux -z 60654
+xcalib $XDG_CONFIG_HOME/X11/colorprofiles/Current
+
+#WINDOW_MANAGER=$1
+XINIT_LOAD=''
+
+case $WINDOW_MANAGER in
+   xmonad)
+      exec xmonad
+      ;;
+   *)
+      echo "wrong"
+      ;;
+esac
