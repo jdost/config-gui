@@ -1,0 +1,52 @@
+@-moz-document domain(quickmeme.com) {
+   #popular_categories,
+   #header,
+   #footer {
+      display: none;
+   }
+
+   #titlewrap + div,
+   img[src$="qm.gif"],
+   img[src$="qm.gif"] {
+      display: none !important;
+   }
+
+   #img + img,
+   #img + img + div,
+   #categories,
+   #img_overlay {
+      display: none;
+   }
+
+   #titlewrap,
+   #leftside {
+      background: transparent !important;
+   }
+
+   #titlewrap h2,
+   #titlewrap a {
+      color: black !important;
+   }
+
+   #rightside {
+      display: none;
+   }
+
+   h4 {
+      display: none;
+   }
+
+   #aatop li {
+      height: auto !important;
+      width: 300px !important;
+      padding-top: 0 !important;
+   }
+   #aatop .linktitle {
+      height: auto !important;
+      width: 260px !important;
+   }
+
+   #page_container > div:first-child {
+      width: 300px !important;
+   }
+}
