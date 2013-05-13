@@ -1,0 +1,50 @@
+/*
+ * #appmenu-button,
+ * #star-button,
+ * #feed-button,
+ * #go-button,
+ * #identity-box,
+ * .autocomplete-history-dropmarker,
+ * */
+
+#appmenu-toolbar-button,
+.tab-close-button,
+.scrollbutton-up,
+.scrollbutton-down,
+.tabbrowser-tab .tab-icon-image {
+   display:none !important;
+}
+
+#main-window #content .tabbrowser-tabs {
+}
+
+#navigator-toolbox toolbar {
+   background: #d2d2d2 !important;
+   /* color: #989898 !important; */
+}
+.tabbrowser-tab {
+   text-align: left !important;
+   background: #4F4363 !important;
+   color: #ffffff !important;
+   text-shadow: none !important;
+   font: 10pt monospace;
+   margin: -5px 0 -6px !important;
+   padding: 0 6px 0px 5px !important;
+   width: 100px !important;
+   border: none !important;
+   border-radius: 0 !important;
+   border-right: 1px solid #9c9c9c !important;
+}
+.tabbrowser-tab:not([selected="true"]) {
+   background: #d2d2d2 !important;
+   color: #000000 !important;
+}
+
+.tabbrowser-tabs {
+   background: "#112233" !important;
+   border-width: 0 !important;
+}
+
+body {
+   overflow-y: hidden !important;
+}

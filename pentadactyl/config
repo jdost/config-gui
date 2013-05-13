@@ -1,0 +1,13 @@
+"hg6923
+
+loadplugins '\.(css|js|penta)$'
+group user
+
+colorscheme solarized-dark
+
+source $PENTADACTYL_RUNTIME/settings/keys.penta
+source $PENTADACTYL_RUNTIME/settings/hints.penta
+
+set go+=n
+
+" vim: ft=pentadactyl:
