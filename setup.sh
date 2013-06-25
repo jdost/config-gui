@@ -32,27 +32,29 @@ link() {
 ####################################################################################
 # Install - Arch {{{
 aurGet() {
+   local END_DIR=$PWD
    cd $HOME/.aur/
    ABBR=${1:0:2}
    wget http://aur.archlinux.org/packages/$ABBR/$1/$1.tar.gz
    tar -xf "$1.tar.gz"
    rm "$1.tar.gz"
    cd "$1"
-   if makepkg > /dev/null; then
-      sudo pacman -U "$(ls -t --file-type | grep tar | head -1)"
-   fi
+   makepkg -si
+   cd $END_DIR
 }
 
 run_pacman() {
    sudo pacman -Sy
 
-   sudo pacman -S --needed urxvt
+   sudo pacman -S --needed xorg-server
+   sudo pacman -S --needed rxvt-unicode
    aurGet urxvt-perls
-   sudo pacman -S --needed xmodmap
+   sudo pacman -S --needed xorg-xmodmap
+   aurGet xcape-git
    sudo pacman -S --needed feh
    aurGet xflux
    aurGet archey3
-   aurGet dwb-hg
+   #aurGet dwb-hg
    #aurGet termite-git
 }
 
