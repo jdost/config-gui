@@ -27,7 +27,7 @@ URxvt.cutchars: "()*,<>[]{}|'\""
 URxvt.colorUL: #DDDDDD
 URxvt.perl-ext-common: default,matcher,clipboard,font-size
 ! matcher
-URxvt.urlLauncher: chromium
+URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
 URxvt.underlineURLs: true
 URxvt.urgentOnBell: true
