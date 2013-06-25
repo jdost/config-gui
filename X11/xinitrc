@@ -5,6 +5,11 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 XINIT_LOAD=1
 
+if [[ -n $1 && $1 != "xterm" ]]; then
+   WINDOW_MANAGER=$1
+fi
+WINDOW_MANAGER=${WINDOW_MANAGER:-xmonad}
+
 if [[ -d $HOME/.local/environment/ ]]; then
    for def in $HOME/.local/environment/*; do
       source $def
@@ -20,14 +25,17 @@ feh --bg-scale --no-fehbg $WALLPAPER_FOLDER/Current
 xflux -z 60654
 xcalib $XDG_CONFIG_HOME/X11/colorprofiles/Current
 
-#WINDOW_MANAGER=$1
 XINIT_LOAD=''
 
 case $WINDOW_MANAGER in
    xmonad)
       exec xmonad
       ;;
+   subtle)
+      exec subtle
+      ;;
    *)
+      echo $WINDOW_MANAGER
       echo "wrong"
       ;;
 esac
