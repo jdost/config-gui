@@ -49,7 +49,7 @@ run_pacman() {
    sudo pacman -S --needed xorg-server
    sudo pacman -S --needed rxvt-unicode
    aurGet urxvt-perls
-   sudo pacman -S --needed xorg-xmodmap
+   sudo pacman -S --needed xorg-xmodmap xorg-xrdb
    aurGet xcape-git
    sudo pacman -S --needed feh
    aurGet xflux
