@@ -20,7 +20,7 @@ fi
 [[ -f $XDG_CONFIG_HOME/X11/Xmodmap ]] && xmodmap $XDG_CONFIG_HOME/X11/Xmodmap
 [[ -d $HOME/.fonts ]] && xset +fp $HOME/.fonts && xset fp rehash
 [[ -d /usr/share/fonts/local ]] && xset +fp /usr/share/fonts/local && xset fp rehash
-type xcape > /dev/null && xcape -e 'Control_L=Escape'
+type xcape %1> /dev/null && xcape -e 'Control_L=Escape'
 
 feh --bg-scale --no-fehbg $WALLPAPER_FOLDER/Current
 xflux -z 60654
