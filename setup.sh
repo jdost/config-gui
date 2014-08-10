@@ -28,12 +28,13 @@ link() {
    linkIfNot dwb $XDG_CONFIG_HOME/dwb
    linkIfNot archey/archey3.cfg $XDG_CONFIG_HOME/archey3.cfg
    linkIfNot termite $XDG_CONFIG_HOME/termite
+   linkIfNot pentadactyl $XDG_CONFIG_HOME/pentadactyl
 } # }}}
 ####################################################################################
 # Install - Arch {{{
 aurGet() {
    local END_DIR=$PWD
-   cd $HOME/.aur/
+   cd $HOME/.local/aur/
    ABBR=${1:0:2}
    wget http://aur.archlinux.org/packages/$ABBR/$1/$1.tar.gz
    tar -xf "$1.tar.gz"
@@ -44,7 +45,7 @@ aurGet() {
 }
 
 run_pacman() {
-   sudo pacman -Sy
+   sudo pacman -Sy --needed wget
 
    sudo pacman -S --needed xorg-server
    sudo pacman -S --needed rxvt-unicode
@@ -54,6 +55,8 @@ run_pacman() {
    sudo pacman -S --needed feh
    aurGet xflux
    aurGet archey3
+   aurGet gohufont
+   aurGet ttf-anonymous-pro
    #aurGet dwb-hg
    #aurGet termite-git
 }
