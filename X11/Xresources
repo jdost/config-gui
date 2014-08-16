@@ -25,7 +25,7 @@ URxvt.internalBorder: 0
 URxvt.cutchars: "()*,<>[]{}|'\""
 
 URxvt.colorUL: #DDDDDD
-URxvt.perl-ext-common: default,matcher,clipboard,font-size
+URxvt.perl-ext-common: default,matcher,clipboard
 ! matcher
 URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
@@ -40,9 +40,6 @@ URxvt.keysym.C-v: perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 URxvt.copyCommand: xclip -i -selection clipboard
 URxvt.pasteCommand: xclip -o -selection clipboard
-! font-size
-URxvt.keysym.C-Up: perl:font-size:increase
-URxvt.keysym.C-Down: perl:font-size:decrease
 
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
