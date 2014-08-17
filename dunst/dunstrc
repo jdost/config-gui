@@ -1,0 +1,32 @@
+[global]
+   font = Ubuntu 12
+   allow_markup = yes
+   format = "<b>%a - %s</b>\n%b"
+   sort = yes
+   alignment = left
+   word_wrap = yes
+   geometry = "250x4-8+20"
+   transparency = 15
+   monitor = 0
+   padding = 10
+   horizontal_padding = 10
+
+[shortcuts]
+   close_all = ctrl+Return
+
+[frame]
+   width = 1
+   color = "#000000"
+
+[urgency_low]
+   background = "#333333"
+   foreground = "#EEEEEE"
+   timeout = 10
+
+[urgency_normal]
+   background = "#339933"
+   foreground = "#333333"
+
+[urgency_critical]
+   background = "#FF9933"
+   foreground = "#333333"
