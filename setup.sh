@@ -29,6 +29,7 @@ link() {
    linkIfNot archey/archey3.cfg $XDG_CONFIG_HOME/archey3.cfg
    linkIfNot termite $XDG_CONFIG_HOME/termite
    linkIfNot pentadactyl $XDG_CONFIG_HOME/pentadactyl
+   linkIfNot dunst $XDG_CONFIG_HOME/dunst
 } # }}}
 ####################################################################################
 # Install - Arch {{{
