@@ -14,7 +14,10 @@
       display: none;
    }
 
-   #image-container h2,
+   #image-container h2 {
+      text-align: center !important;
+   }
+
    #image-container .image-hover {
       display: none;
    }
@@ -53,5 +56,9 @@
    .error-textrow {
       display: block !important;
       color: red;
+   }
+
+   div[role="button"] {
+      display: none !important;
    }
 }
