@@ -7,7 +7,11 @@ colorscheme solarized-dark
 
 source $PENTADACTYL_RUNTIME/settings/keys.penta
 source $PENTADACTYL_RUNTIME/settings/hints.penta
+source $PENTADACTYL_RUNTIME/settings/commands.penta
 
 set go+=n
+
+set! ui.key.menuAccessKeyFocuses=false
+set! ui.key.menuAccessKey=0
 
 " vim: ft=pentadactyl:

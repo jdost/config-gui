@@ -1,0 +1,7 @@
+command private-tab -nargs=+ -description "Open Private Tab" -javascript <<EOF
+   privateTab.readyToOpenTab(true);
+   gBrowser.addTab("about:blank");
+   dactyl.execute(":tablast");
+   dactyl.execute(":open " + args);
+   privateTab.stopToOpenTabs();
+EOF
