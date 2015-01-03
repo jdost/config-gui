@@ -1,64 +1,17 @@
 @-moz-document domain(imgur.com) {
-   body > *:not(#content):not(.jquery-image-zoom):not(.decoded),
-   #content .right,
-   #footer {
-      display: none;
-   }
-
-   #content {
-      display: block;
-   }
-
-   .panel > *:not(.image):not(#image),
-   #image-container > *:not(.image):not(#image):not(.zoom):not(#prev):not(#next) {
-      display: none;
-   }
-
-   #image-container h2 {
-      text-align: center !important;
-   }
-
-   #image-container .image-hover {
-      display: none;
-   }
-
-   #image-container {
-      display: block !important;
-   }
-
-   .panel {
-      padding: 0;
-      width: auto !important;
-   }
-
-   .panel,
-   .textbox,
-   .image,
-   .wrapper {
-      background-color: transparent !important;
-   }
-
-   .left {
-      float: none;
-   }
-
-   .nav-button {
-      width: 25% !important;
-      margin-right: 25%;
-   }
-
-   .nav-button + .nav-button {
-      margin-left: 25%;
-      margin-right: 0;
-   }
-
-   .fullwidth-row,
-   .error-textrow {
-      display: block !important;
-      color: red;
-   }
-
-   div[role="button"] {
-      display: none !important;
-   }
+   #topbar,
+   #footer,
+   .info,
+   #side-gallery,
+   .advertisement,
+   #under-image .favorite-icon,
+   #under-image .favorite-icon *,
+   #under-image .social *,
+   .panel .links,
+   #fixed-side-footer-links,
+   .action-bar,
+   #submit-caption,
+   #captions,
+   .comments-info,
+   .next-prev-browse { display: none !important; }
 }
