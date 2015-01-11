@@ -8,6 +8,8 @@ colorscheme solarized-dark
 source $PENTADACTYL_RUNTIME/settings/keys.penta
 source $PENTADACTYL_RUNTIME/settings/hints.penta
 source $PENTADACTYL_RUNTIME/settings/commands.penta
+source $PENTADACTYL_RUNTIME/settings/misc.penta
+source $PENTADACTYL_RUNTIME/settings/style.penta
 
 set go+=n
 set go-=r
