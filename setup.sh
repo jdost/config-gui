@@ -25,7 +25,6 @@ link() {
    linkIfNot X11/xinitrc $HOME/.xinitrc
 
    # Apps
-   linkIfNot dwb $XDG_CONFIG_HOME/dwb
    linkIfNot archey/archey3.cfg $XDG_CONFIG_HOME/archey3.cfg
    linkIfNot termite $XDG_CONFIG_HOME/termite
    linkIfNot pentadactyl $XDG_CONFIG_HOME/pentadactyl
