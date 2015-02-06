@@ -1,8 +1,0 @@
-web_inspector
-o 127.0.0.1
-exit
-javascript $("#footer").slideUp();
-open sabnzb:8080
-reload
-exit:quit
-show_settings
