@@ -14,5 +14,6 @@
    #captions,
    .comments-info,
    .fixed-share-container,
+   iframe,
    .next-prev-browse { display: none !important; }
 }
