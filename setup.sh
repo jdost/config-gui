@@ -27,7 +27,7 @@ link() {
    # Apps
    linkIfNot archey/archey3.cfg $XDG_CONFIG_HOME/archey3.cfg
    linkIfNot termite $XDG_CONFIG_HOME/termite
-   linkIfNot pentadactyl $XDG_CONFIG_HOME/pentadactyl
+   linkIfNot qutebrowser $XDG_CONFIG_HOME/qutebrowser
    linkIfNot dunst $XDG_CONFIG_HOME/dunst
 } # }}}
 ####################################################################################

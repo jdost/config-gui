@@ -1,7 +1,0 @@
-set hintkeys=asdfjkl;
-set hlfind
-
-" Styles
-highlight -a Hint text-transform: uppercase; font-size: 12px !important; padding: 1px 5px !important;
-
-" vim: ft=pentadactyl

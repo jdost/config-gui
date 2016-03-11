@@ -1,16 +1,11 @@
-alias web='firefox'
+alias web='qutebrowser'
 alias pdf='zathura' #llpp'
 
 alias gba="VisualBoyAdvance"
 alias snes="snes9x"
 
-export BROWSER="firefox"
+export BROWSER="qutebrowser"
 export WINEARCH="win32 winecfg"
 export WALLPAPER_FOLDER="$HOME/pictures/wallpaper"
-
-# pentadactyl {{{
-export PENTADACTYL_RUNTIME=$XDG_CONFIG_HOME/pentadactyl
-export PENTADACTYL_INIT="source $PENTADACTYL_RUNTIME/config"
-# }}}
 
 # vim: ft=zsh foldmethod=marker

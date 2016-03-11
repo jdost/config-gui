@@ -1,5 +1,0 @@
-imap jj <Esc>
-
-nmap O :tabopen 
-
-" vim: ft=pentadactyl
