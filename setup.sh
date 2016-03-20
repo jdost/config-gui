@@ -47,16 +47,16 @@ aurGet() {
 run_pacman() {
    sudo pacman -Sy --needed wget
 
-   sudo pacman -S --needed xorg-server
+   sudo pacman -S --needed xorg-server xorg-xinit
    sudo pacman -S --needed rxvt-unicode
-   aurGet urxvt-perls
+   aur urxvt-perls-git
    sudo pacman -S --needed xorg-xmodmap xorg-xrdb
-   aurGet xcape-git
+   #aurGet xcape-git
    sudo pacman -S --needed feh
-   aurGet xflux
-   aurGet archey3
-   aurGet gohufont
-   aurGet ttf-anonymous-pro
+   aur xflux
+   aur archey3
+   aur gohufont
+   sudo pacman -S --needed ttf-anonymous-pro
    #aurGet dwb-hg
    #aurGet termite-git
 }
