@@ -20,9 +20,7 @@ fi
 [[ -f $XDG_CONFIG_HOME/X11/Xmodmap ]] && xmodmap $XDG_CONFIG_HOME/X11/Xmodmap
 [[ -d $HOME/.fonts ]] && xset +fp $HOME/.fonts && xset fp rehash
 [[ -d /usr/share/fonts/local ]] && xset +fp /usr/share/fonts/local && xset fp rehash
-type xcape %1> /dev/null && xcape -e 'Control_L=Escape'
 
-feh --bg-fill --no-fehbg $WALLPAPER_FOLDER/Current
 xflux -z 60654
 xcalib $XDG_CONFIG_HOME/X11/colorprofiles/Current
 
@@ -30,10 +28,14 @@ XINIT_LOAD=''
 
 case $WINDOW_MANAGER in
    xmonad)
+      feh --bg-fill --no-fehbg $WALLPAPER_FOLDER/Current
       exec xmonad
       ;;
    subtle)
       exec subtle
+      ;;
+   steam)
+      exec /usr/bin/steam -bigpicture
       ;;
    *)
       echo $WINDOW_MANAGER
