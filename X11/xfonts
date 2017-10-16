@@ -22,12 +22,20 @@ Xft.hintstyle: hintslight
 ! }}}
 
 ! UbuntuMono {{{
-#define UBUMONO -*-ubuntu mono-medium-r-normal-*-11-*-*-*-*-*-*-*
+!#define UBUMONO -*-ubuntu mono-medium-r-normal-*-11-*-*-*-*-*-*-*
+#define UBUMONO xft:Ubuntu Mono:size=11
 ! }}}
-!
+
 ! OhSnap {{{
 #define OHSNAP -*-ohsnapu-mediume-r-normal-*-11-*-*-*-*-*-*-*
 #define OHSNAPB -*-ohsnapu-bold-r-normal-*-11-*-*-*-*-*-*-*
+! }}}
+
+! Hack {{{
+#define HACK xft:Hack Mono:size=10
+#define HACKB xft:Hack Bold Mono:size=10
+#define HACKIT xft:Hack Italic Mono:size=10
+#define HACKBIT xft:Hack Italic Bold Mono:size=10
 ! }}}
 
 ! vim: ft=xdefaults foldmethod=marker

@@ -1,10 +1,10 @@
 #include "xcolors/Current"
 #include "xfonts"
 
-#define RFONT GOHU
-#define BFONT GOHU_B
-#define IFONT ANONPRO
-#define IBFONT ANONPRO_B
+#define RFONT HACK
+#define BFONT HACKB
+#define IFONT HACKIT
+#define IBFONT HACKBIT
 
 Xcursor.theme: Neutral_Plus
 
@@ -15,6 +15,7 @@ URxvt.font: RFONT
 URxvt.boldFont: BFONT
 URxvt.italicFont: IFONT
 URxvt.boldItalicFont: IBFONT
+URxvt.letterSpace: -1
 
 URxvt.scrollBar: False
 URxvt.scrollTtyOutput: False
@@ -25,24 +26,15 @@ URxvt.internalBorder: 0
 URxvt.cutchars: "()*,<>[]{}|'\""
 
 URxvt.colorUL: #DDDDDD
-URxvt.perl-ext-common: default,matcher,clipboard
+URxvt.perl-ext-common: default,clipboard
 ! matcher
-URxvt.url-launcher: /usr/bin/firefox
-URxvt.matcher.button: 1
 URxvt.underlineURLs: true
 URxvt.urgentOnBell: true
-!URxvt*keysym.M-u: perl:url-select:select_next
-!
-!URxvt.keysym.C-Return: command:\033[?25t
 ! clipboard
 URxvt.keysym.C-x: perl:clipboard:copy
 URxvt.keysym.C-v: perl:clipboard:paste
-URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 URxvt.copyCommand: xclip -i -selection clipboard
 URxvt.pasteCommand: xclip -o -selection clipboard
-
-URxvt.keysym.Shift-Up: command:\033]720;1\007
-URxvt.keysym.Shift-Down: command:\033]721;1\007
 
 URxvt.depth: 32
 URxvt.background: rgba:2222/2222/2222/dddd
