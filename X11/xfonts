@@ -32,10 +32,10 @@ Xft.hintstyle: hintslight
 ! }}}
 
 ! Hack {{{
-#define HACK xft:Hack Mono:size=10
-#define HACKB xft:Hack Bold Mono:size=10
-#define HACKIT xft:Hack Italic Mono:size=10
-#define HACKBIT xft:Hack Italic Bold Mono:size=10
+#define HACK xft:Knack Nerd Font Mono:size=11
+#define HACKB xft:Knack Nerd Font Mono:size=11:style=Bold
+#define HACKIT xft:Knack Nerd Font Mono:size=11:style=Italic
+#define HACKBIT xft:Knack Nerd Font Mono:size=11:style=Bold Italic
 ! }}}
 
 ! vim: ft=xdefaults foldmethod=marker
