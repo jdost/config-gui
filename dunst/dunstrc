@@ -1,32 +1,38 @@
 [global]
-   font = Ubuntu 12
-   allow_markup = yes
-   format = "<b>%a - %s</b>\n%b"
+   font = Ubuntu Mono 12
+   markup = yes
+   format = "<b>%s</b> (%a)\n%b"
    sort = yes
    alignment = left
    word_wrap = yes
-   geometry = "250x4-8+20"
+   geometry = "300x40-16+40"
    transparency = 15
    monitor = 0
    padding = 10
    horizontal_padding = 10
+   icon_position = left
+   max_icon_size = 32
+   corner_radius = 15
+   frame_width = 2
+   frarme_color = "#8EC07C"
 
 [shortcuts]
    close_all = ctrl+Return
 
-[frame]
-   width = 1
-   color = "#000000"
-
 [urgency_low]
-   background = "#333333"
-   foreground = "#EEEEEE"
-   timeout = 10
+   background = "#191311"
+   foreground = "#3B7C87"
+   frame_color = "#3B7C87"
+   timeout = 4
 
 [urgency_normal]
-   background = "#339933"
-   foreground = "#333333"
+   background = "#191311"
+   foreground = "#5B8234"
+   frame_color = "#5B8234"
+   timeout = 6
 
 [urgency_critical]
-   background = "#FF9933"
-   foreground = "#333333"
+   background = "#191311"
+   foreground = "#B7472A"
+   frame_color = "#B7472A"
+   timeout = 8
