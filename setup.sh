@@ -47,6 +47,7 @@ link() {
    linkIfNot supervisor.d/picom.conf $XDG_CONFIG_HOME/supervisord/config.d/compositor.conf
    #linkIfNot supervisor.d/dunst.conf $XDG_CONFIG_HOME/supervisord/config.d/notifications.conf
    linkIfNot supervisor.d/deadd.conf $XDG_CONFIG_HOME/supervisord/config.d/notifications.conf
+   linkIfNot supervisor.d/maestral.conf $XDG_CONFIG_HOME/supervisord/config.d/dropbox.conf
 }
 
 install() {
@@ -58,6 +59,21 @@ install() {
    #sudo pacman -S --needed rxvt-unicode
    sudo pacman -S --needed alacritty
    sudo pacman -S --needed feh
+   # Maestral lives in a python virtualenv
+   pyenv maestral "maestral[gui]"
+}
+
+pyenv() {
+   local name=$1
+   shift # the first arg is the virtualenv name, the rest are pip packages
+   local envdir="$HOME/.local/virtualenvs/$name"
+   if [[ -d "$envdir" ]]; then
+      echo "virtualenv $name already exists..."
+      return
+   fi
+   mkdir -p $HOME/.local/virtualenvs
+   python3 -m venv --prompt "($name)" $envdir
+   $envdir/bin/python3 -m pip install $*
 }
 
 update() {
