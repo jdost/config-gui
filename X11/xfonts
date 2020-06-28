@@ -17,13 +17,15 @@ Xft.hintstyle: hintslight
 ! }}}
 
 ! AnonPro {{{
-#define ANONPRO -*-anonymous pro-medium-r-*-*-11-*-*-*-*-*-iso8859-*
-#define ANONPRO_B -*-anonymous pro-*-r-*-*-11-*-*-*-*-*-iso8859-*
+!#define ANONPRO -*-anonymous pro-medium-r-*-*-11-*-*-*-*-*-iso8859-*
+#define ANONPRO xft:Anonymice Nerd Font Mono:size=11
+!#define ANONPRO_B -*-anonymous pro-*-r-*-*-11-*-*-*-*-*-iso8859-*
+#define ANONPRO_B xft:Anonymice Nerd Font Mono:size=11:style=Bold
 ! }}}
 
 ! UbuntuMono {{{
-!#define UBUMONO -*-ubuntu mono-medium-r-normal-*-11-*-*-*-*-*-*-*
-#define UBUMONO xft:Ubuntu Mono:size=11
+#define UBUMONO -*-ubuntumono nerd font mono-medium-r-normal-*-16-*-*-*-*-*-*-*
+!#define UBUMONO xft:UbuntuMono Nerd Font Mono:size=11
 ! }}}
 
 ! OhSnap {{{
@@ -32,10 +34,16 @@ Xft.hintstyle: hintslight
 ! }}}
 
 ! Hack {{{
-#define HACK xft:Knack Nerd Font Mono:size=11
-#define HACKB xft:Knack Nerd Font Mono:size=11:style=Bold
-#define HACKIT xft:Knack Nerd Font Mono:size=11:style=Italic
-#define HACKBIT xft:Knack Nerd Font Mono:size=11:style=Bold Italic
+#define HACK xft:Hack Nerd Font Mono:size=11
+#define HACKB xft:Hack Nerd Font Mono:size=11:style=Bold
+#define HACKIT xft:Hack Nerd Font Mono:size=11:style=Italic
+#define HACKBIT xft:Hack Nerd Font Mono:size=11:style=Bold Italic
+! }}}
+
+! Emoji/Unicode {{{
+#define NOTOEMOJI xft:Noto Color Emoji:size=11:style=Regular
+#define DROIDMONO xft:Droid Sans Mono:size=11:style=Regular
+#define SYMBOLA xft:Symbola:size=11:style=Regular
 ! }}}
 
 ! vim: ft=xdefaults foldmethod=marker

@@ -1,11 +1,22 @@
 #/bin/sh
 
-if [ -z "$XDG_CONFIG_HOME" ]; then
-   export XDG_CONFIG_HOME=$HOME/.config
-fi
+set -euo pipefail
 
-####################################################################################
-# Linking {{{
+export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-$HOME/.config}
+
+show_help() {
+   cat <<-HELP
+Setup script for general graphical applications
+
+USAGE: ${0} [command]
+
+commands:
+   init
+   update
+   link
+HELP
+}
+
 linkIfNot() {
    if [ -e $1 ]; then
       if [ ! -e $2 ]; then
@@ -25,94 +36,48 @@ link() {
    linkIfNot X11/xinitrc $HOME/.xinitrc
 
    # Apps
-   linkIfNot archey/archey3.cfg $XDG_CONFIG_HOME/archey3.cfg
-   linkIfNot termite $XDG_CONFIG_HOME/termite
-   linkIfNot qutebrowser $XDG_CONFIG_HOME/qutebrowser
    linkIfNot dunst $XDG_CONFIG_HOME/dunst
-} # }}}
-####################################################################################
-# Install - Arch {{{
-aurGet() {
-   local END_DIR=$PWD
-   cd $HOME/.local/aur/
-   ABBR=${1:0:2}
-   wget http://aur.archlinux.org/packages/$ABBR/$1/$1.tar.gz
-   tar -xf "$1.tar.gz"
-   rm "$1.tar.gz"
-   cd "$1"
-   makepkg -si
-   cd $END_DIR
+   linkIfNot deadd $XDG_CONFIG_HOME/deadd
+   linkIfNot picom $XDG_CONFIG_HOME/picom
+   linkIfNot alacritty $XDG_CONFIG_HOME/alacritty
+   linkIfNot rofi $XDG_CONFIG_HOME/rofi
+
+   # Daemons
+   mkdir -p $XDG_CONFIG_HOME/supervisord/config.d/
+   linkIfNot supervisor.d/picom.conf $XDG_CONFIG_HOME/supervisord/config.d/compositor.conf
+   #linkIfNot supervisor.d/dunst.conf $XDG_CONFIG_HOME/supervisord/config.d/notifications.conf
+   linkIfNot supervisor.d/deadd.conf $XDG_CONFIG_HOME/supervisord/config.d/notifications.conf
 }
 
-run_pacman() {
-   sudo pacman -Sy --needed wget
-
-   sudo pacman -S --needed xorg-server xorg-xinit
-   sudo pacman -S --needed rxvt-unicode
-   aur urxvt-perls-git
-   sudo pacman -S --needed xorg-xmodmap xorg-xrdb
-   #aurGet xcape-git
+install() {
+   # X11 requirements
+   sudo pacman -S --needed \
+      xorg-server xorg-xinit \
+      xorg-xmodmap xorg-xrdb
+   # Apps
+   #sudo pacman -S --needed rxvt-unicode
+   sudo pacman -S --needed alacritty
    sudo pacman -S --needed feh
-   aur xflux
-   aur archey3
-   aur gohufont
-   sudo pacman -S --needed ttf-anonymous-pro
-   #aurGet dwb-hg
-   #aurGet termite-git
 }
 
-build_arch() {
-   run_pacman
-   mkdir $HOME/.fonts
-}
-
-update_arch() {
+update() {
    git pull
-   run_pacman
-} # }}}
-####################################################################################
-# Install - Ubuntu {{{
-run_apt() {
-   sudo apt-get update
-   sudo apt-get upgrade
-
-   sudo apt-get install urxvt
-   sudo apt-get install xmodmap
-   sudo apt-get install feh
 }
 
-build_ubuntu() {
-   run_apt
-   mkdir $HOME/.fonts
-}
-
-update_ubuntu() {
-   git pull
-   run_apt
-} # }}}
-####################################################################################
-
-if [ -z "${1}" ]; then
-   echo "Missing action. Syntax: ${0} [command]"
-   echo "  Options:"
-   echo "    init    -- installs associated programs and creates all symlinks"
-   echo "    update  -- updates packages associated with repo, creates any new symlinks"
-   echo "    link    -- create symlinks for files (will not overwrite existing files"
-   echo ""
-   exit 1
-fi
-case "${1}" in
+case "${1:-}" in
    'init')
-      command -v pacman >/dev/null 2>&1  && build_arch
-      command -v apt-get >/dev/null 2>&1 && build_ubuntu
+      install
       link
       ;;
    'update')
-      command -v pacman >/dev/null 2>&1  && update_arch
-      command -v apt-get >/dev/null 2>&1 && update_ubuntu
+      update
       link
       ;;
    'link')
       link
+      ;;
+   *)
+      show_help
+      exit
       ;;
 esac

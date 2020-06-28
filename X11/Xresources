@@ -11,7 +11,7 @@ Xcursor.theme: Neutral_Plus
 dzen2.font: UBUMONO
 
 ! URxvt {{{
-URxvt.font: RFONT
+URxvt.font: RFONT, SYMBOLA
 URxvt.boldFont: BFONT
 URxvt.italicFont: IFONT
 URxvt.boldItalicFont: IBFONT
@@ -26,6 +26,7 @@ URxvt.internalBorder: 0
 URxvt.cutchars: "()*,<>[]{}|'\""
 
 URxvt.colorUL: #DDDDDD
+!URxvt.perl-lib: ~/.config/X11/urxvt
 URxvt.perl-ext-common: default,clipboard
 ! matcher
 URxvt.underlineURLs: true
@@ -33,15 +34,16 @@ URxvt.urgentOnBell: true
 ! clipboard
 URxvt.keysym.C-x: perl:clipboard:copy
 URxvt.keysym.C-v: perl:clipboard:paste
-URxvt.copyCommand: xclip -i -selection clipboard
-URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.clipboard.copycmd: xclip -i -selection clipboard
+URxvt.clipboard.pastecmd: xclip -o -selection clipboard
 
 URxvt.depth: 32
 URxvt.background: rgba:2222/2222/2222/dddd
 
 URxvt.inheritPixmap: true
 URxvt.tintColor: white
-URxvt.shading: 15
+!URxvt.transparent: false
+!URxvt.shading: 0
 ! }}}
 
 ! XTerm {{{
