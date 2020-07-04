@@ -1,8 +1,8 @@
 #!/bin/sh
 # Executed by startx (run your window manager from here)
 
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_CACHE_HOME=$HOME/.cache
+export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-$HOME/.config}
+export XDG_CACHE_HOME=${XDG_CACHE_HOME:-$HOME/.cache}
 XINIT_LOAD=1
 
 if [[ -n $1 && $1 != "xterm" ]]; then
@@ -18,16 +18,21 @@ fi
 
 [[ -f $XDG_CONFIG_HOME/X11/Xresources ]] && xrdb -merge $XDG_CONFIG_HOME/X11/Xresources
 [[ -f $XDG_CONFIG_HOME/X11/Xmodmap ]] && xmodmap $XDG_CONFIG_HOME/X11/Xmodmap
-[[ -d $HOME/.fonts ]] && xset +fp $HOME/.fonts && xset fp rehash
-[[ -d /usr/share/fonts/local ]] && xset +fp /usr/share/fonts/local && xset fp rehash
 
-xcalib $XDG_CONFIG_HOME/X11/colorprofiles/Current
+if which xset &>/dev/null; then
+   [[ -d $HOME/.fonts ]] && xset +fp $HOME/.fonts && xset fp rehash
+   [[ -d /usr/share/fonts/local ]] && xset +fp /usr/share/fonts/local && xset fp rehash
+
+   xset s on && xset s 240 60
+fi
+
+which xcalib &>/dev/null && xcalib $XDG_CONFIG_HOME/X11/colorprofiles/Current
 
 XINIT_LOAD=''
 
 case $WINDOW_MANAGER in
    xmonad)
-      wallpaper reset
+      which wallpaper &>/dev/null && wallpaper reset
       exec xmonad
       ;;
    *)

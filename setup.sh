@@ -54,11 +54,10 @@ install() {
    # X11 requirements
    sudo pacman -S --needed \
       xorg-server xorg-xinit \
-      xorg-xmodmap xorg-xrdb
-   # Apps
-   #sudo pacman -S --needed rxvt-unicode
-   sudo pacman -S --needed alacritty
-   sudo pacman -S --needed feh
+      xorg-xmodmap xorg-xrdb \
+      alacritty \
+      feh
+   #    rxvt-unicode \
    # Maestral lives in a python virtualenv
    pyenv maestral "maestral[gui]"
 }
