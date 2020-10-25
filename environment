@@ -1,11 +1,3 @@
-alias web='chromium'
-alias pdf='zathura' #llpp'
-
-alias gba="VisualBoyAdvance"
-alias snes="snes9x"
-
 export BROWSER="chromium"
-export WINEARCH="win32 winecfg"
-export WALLPAPER_FOLDER="$HOME/.local/Dropbox/wallpaper"
 
 # vim: ft=zsh foldmethod=marker
